@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+</head>
+<body>
+
+<!--Topbar Code-->
+    <div id="top"></div>
+<div class="topbar">
+    <img src="icon1.png">&nbsp;&nbsp;&nbsp;
+    <img src="icon2.png">&nbsp;&nbsp;&nbsp;
+    <img src="icon3.png">&nbsp;&nbsp;&nbsp;
+    <img src="icon4.png">&nbsp;&nbsp;&nbsp;
+    <img src="icon5.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--Slogan Line-->
+     Millions of people's life has changed, millions more awaiting your donation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--Tobar Buttons-->
+    <button id="topbar-btn">UK Donor</button>
+    <button id="topbar-btn">Donate Now</button>
+    <button id="topbar-btn">SMIT Results</button>
+</div>
+
+<!--Navigation Bar Code-->
+<div class="navbar">
+
+    <!--LOGO CODE-->
+    <div class="navbarlogo">
+        <img src="logo.png" width="45%">
+    </div>
+
+    <!--Navigation Buttons Code-->
+        <div class="navbarbtn">
+             <!--Home Button-->
+            <button id="simplebtn" style="background-color: rgb(58, 58, 248); color: white; border-radius: 30px;">Home</button>
+             <!--About Button-->
+            <div class="dropdown">
+                <button class="dropbtn">About <img src="down.png" width="9px;" height="9px"></button>
+            <div class="dropdown-content">
+                <a href="#">Introduction</a>
+                <a href="#">Chairman Message</a>
+                <a href="#">Saylani Annual Report</a>
+            </div>
+        </div>
+            <!--Saylani Services Button-->
+        <div class="dropdown">
+                    <button class="dropbtn">Saylani Services <img src="down.png" width="9px;" height="9px"></button>
+            
+                    <div class="dropdown-content">
+                <a id="edudd" onclick="edudropdown()">Education<img id="rightarrow" src="right.png" width="9px;" height="9px"></a>
+               
+                    <div class="dropdown" id="educationdropdown">
+                        <div class="dropdown-content">
+                            <a href="#">Salynai Mass Trainign</a>
+                            <a href="#">Saylani Incubator</a>
+                            <a href="#">Green House</a>
+                        </div>
+                    </div>
+                <script>
+                    function edudropdown() {
+                        var x = document.getElementById("educationdropdown");
+                        if (x.style.display === "none") {
+                          x.style.display = "block";
+                          x.style.marginLeft = "215px";
+                          x.style.marginTop = "0px";
+                        } else {
+                          x.style.display = "none";
+                        }
+                      } 
+                </script>
+
+                <a href="#" onclick="meddropdown()">Medical<img id="rightarrow" src="right.png" width="9px;" height="9px"></a>
+
+                <div class="dropdown" id="medicalndropdown">
+                    <div class="dropdown-content">
+                        <a href="#">Salynai Blood Bank & Thalassemia Center</a>
+                        <a href="#">Saylani Clinic Hospital</a>
+                        <a href="#">Medical Internship Form</a>
+                    </div>
+                </div>
+                <script>
+                    function meddropdown() {
+                        var x = document.getElementById("medicalndropdown");
+                        if (x.style.display === "none") {
+                          x.style.display = "block";
+                          x.style.marginLeft = "215px";
+                          x.style.marginTop = "0px";
+                        } else {
+                          x.style.display = "none";
+                        }
+                      } 
+                </script>
+
+                <a href="#" onclick="weldropdown()">Welfare<img id="rightarrow" src="right.png" width="9px;" height="9px"></a>
+                <div class="dropdown" id="welfaredropdown">
+                    <div class="dropdown-content">
+                        <a href="#">Family Adoption</a>
+                        <a href="#">Wedding Help</a>
+                    </div>
+                </div>
+                <script>
+                    function weldropdown() {
+                        var x = document.getElementById("welfaredropdown");
+                        if (x.style.display === "none") {
+                          x.style.display = "block";
+                          x.style.marginLeft = "215px";
+                          x.style.marginTop = "0px";
+                        } else {
+                          x.style.display = "none";
+                        }
+                      } 
+                </script>
+
+                <a href="">Hajj Application Form</a>
+                <a href="">Saylani Dastarkhwan</a>
+                <a href="">Saylani RO Plant</a>
+                <a href="">Online Sadqah</a>
+                <a href="">Online Taweezat/ Istekhara</a>
+                <a href="">Saylani Job Bank</a>
+
+                <a href="" onclick="onlinedropdown()">Online Quran Academy<img id="rightarrow" src="right.png" width="9px;" height="9px"></a>
+                <div class="dropdown" id="oqdropdown">
+                    <div class="dropdown-content">
+                        <a href="#">Online Quran Admission</a>
+                        <a href="#">Quran App(Tafteesh)</a>
+                        <a href="">Online Quran Registration</a>
+                    </div>
+                </div>
+                <script>
+                    function onlinedropdown() {
+                        var x = document.getElementById("oqdropdown");
+                        if (x.style.display === "none") {
+                          x.style.display = "block";
+                          x.style.marginLeft = "215px";
+                          x.style.marginTop = "0px";
+                        } else {
+                          x.style.display = "none";
+                        }
+                      } 
+                </script>
+
+                <a href="">Books</a>
+                <a href="">Saylani Online Masjid</a>
+            </div>
+        </div>
+            <!--Future Project Button-->
+        <div class="dropdown">
+                    <button class="dropbtn">Future Projects  <img src="down.png" width="9px;" height="9px"></button>
+            <div class="dropdown-content">
+                <a href="#">Saylani University</a>
+                <a href="#">Saylani City</a>
+            </div>
+        </div>
+
+            <button id="simplebtn">Media</button>
+        <button id="simplebtn">News</button>
+
+        <div class="dropdown">
+                    <button class="dropbtn">Donation  <img src="down.png" width="9px;" height="9px"></button>
+            <div class="dropdown-content">
+                <a href="#">Bank Detail</a>
+                <a href="#">Sadqah</a>
+                <a href="#">Aqiqa</a>
+                <a href="">Other Donations</a>
+                <a href="">Corona Effectives</a>
+                <a href="" >Ramazan - 2020 <img src="right.png" width="9px;" height="9px"></a>
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Image Slider Code-->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 7</div>
+      <img src="is1.JPG" style="width:100%"> 
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <img src="is2.JPG" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <img src="is3.JPG" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+        <img src="is4.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+        <img src="is5.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+        <img src="is6.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 7</div>
+        <img src="is7.JPG" style="width:100%">
+      </div>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+        
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 4 seconds
+        }
+   </script>
+
+<!--Marquee News Slide Code-->
+<div>
+    <center>
+    <marquee id="newsslider" behavior="scroll" direction="left" scrollamount="5"  
+             onmouseover="this.stop();" onmouseout="this.start();">
+            <font color=green;> (News-1 Dated:15-06-2019)</font>PIAICNext Phase Admission in Islamabad And Faisalabad" . <a href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3441173892575196/?type=3&theater">More Details</a> 
+            <font color=green;>(News-2 Dated:15-05-2019)</font>Saylani Welfare Announced "Donation Application" . <a href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3332489120110341/?type=3&theater&_rdc=1&_rdr">More Details</a>    
+            <font color=green;>(News-3 Dated:07-05-2019)</font>
+            Alhamdulillah Saylani Organized 200+ Locations For Iftar And Sehri In This Holy Month . <a href="https://www.facebook.com/saylaniwelfare/?type=3&theater">More Details</a>    
+            <font color=green;>(News-4 Dated:08-03-2019)</font>
+            Saylani Welfare Distributing Ration & Clothes to affected people of Balochistan. <a href="https://www.facebook.com/saylaniwelfare/posts/3164679946891260">More Details</a>   
+            <font color=green;>(News-5 Dated:25-02-2019)</font>
+            PIAIC Entrance Exam Merit Ranking List Announced. <a href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3135220066503915/?type=3&theater%3E">More Details</a> 
+            <font color=green;>(News-6 Dated:23-02-2019)</font>  President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare
+            International Trust HeadOffice Karachi. <a href="https://www.facebook.com/saylaniwelfare/posts/3135103563182232?__xts__[0]=68.ARD9PTgM3DL_2vvulRqQ-b25KUD2P8X7TSS9g6gbxDfRdIBqgjNGJffSbV0ZcFmUFF5Ocrn-wvtpvDbjWBQxq0UHTlRJR1vEkgUOfm8Vk0ltcQp9K5q268QBcUMjujlPyCnBIxXcbe_Qjqbw1DXfCLQ1fFwBdGk77ndYxRXPrUVHrYybrBb5jWxu8GJQ37RpI7LLayc6xkve6gO149Ud-NWv_eF72blzToVI2fZW2ZWJUlRFSgWFK5jgrDGcsP-I7NBis9UXNfBBb55nXahKzJHvloneJh93hN9Wc3bIyvpn7v1IJSixyqcGRr_KHC-mO46gL9JUYx_acVfGdQDLUCBORw">More Details</a>    
+            <font color=green;>(News-7 Dated:19-02-2019)</font>  Dr Jamil Ahmed (Additional Inspector General of Police) & Atiqmir Visit Saylani
+            Welfare International Trust, Saylani Mass I.T. Training. <a href="https://www.facebook.com/saylaniwelfare/posts/3124996217526300?__xts__[0]=68.ARCElwXqFXBXobZcA_UIl5WsTnqek6hA0692UZgzLiTQcX71VvEVoMgzqDV_LCU8l4vgjmKHex8j5abeGcQPzz-0Vo7g8gNqrP0CK04uhT29KI7ZBXw7L0UhSE9vpr7JOS4591gwSiYhmPbI_exl5O0PUbYyqzRyVjDhZf833fadxaHMxR3LURDcRfhfFRurM3x6cKNgZ7XwQi2vP6tA2-XS4HUzYNRUfZ5Yc4iUJAwXHOGi64EA62Drmy5c0mv0CZumqreWzE6JGBGOlQC5dMh7k07-qNBGwItqzarzu8CiNWC9kZMwzYyExhOY7JKF76U1ZzEbClh6A-yQYJ-qY1jbYQ">More Details</a>    
+        </marquee>
+    </center>
+</div>
+
+<!--Introduction Box-->
+<div class="introbox">   
+
+    <h1 id="heading1">INTRO<span id="span1">DUCTION</span></h1>
+    <center><h2 style="color: forestgreen;">____<img src="favicon.png" alt="">____</h2></center>
+    <center><div class="paracontainer">
+        <p>Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani Welfare 
+            International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the financial 
+            troubles of the poor, giving people a chance to live a dignified life and spreading happiness. 
+        </p>
+        
+        <p>
+            We are an organization that believes in lighting up the lives of underprivileged people across the world. 
+            We endeavor to provide the best quality services in areas including food, education, medical and social welfare 
+            free of cost to people living in the dark. With over 60 different sectors, we feed thousands of hungry people each day, 
+            hundreds more are given the hope of life through medical health care, many are educated to become leaders of tomorrow and 
+            several are given the opportunity to stand on their feet financially. 
+        </p>    
+
+        <p>
+            Today, we are proud to say that our physical presence extends throughout Pakistan with a vast network of 125 branches 
+            operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and Faisalabad. Apart from Pakistan, 
+            we have overseas offices in the UK, USA and UAE as well. Our worldwide branches are operating under the guidance of a team 
+            of over 2,000 working professionals who help almost 125,000 people on a daily basis. 
+        </p>
+        <p>
+            We strongly believe that a little help goes a long way and our work would not be possible without the generous support 
+            of our valuable donors. Our local and international donors have graciously lent us a hand by supporting our causes and 
+            enabling us to serve the needs of people in need. 
+        </p>
+</div>
+</center>
+</div>
+
+<!--Statistics Box-->
+<div class="statscontainer">
+    <center>
+    <div class="sc1"> <br><br><br><br><br>
+        <img src="foodicon.png" alt="">
+        <div class="counter"><span>125,000</span></div>
+        <p><b> DAILY DASTARKHWAN <br><span>(MONTHLY)</span></p>
+ 
+<span class="timer"></span>
+    </div>
+    <div class="sc2"><br><br><br><br><br>
+        <img src="familyicon.png" alt="">
+        <div class="counter"><span>7,500</span></div>
+        <p>FAMILY ADOPTION <br><span>(MONTHLY)</span></p>
+
+    </div>
+    <div class="sc3"><br><br><br><br><br>
+        <img src="medicalicon.png" alt="">
+        <div class="counter"><span>43,749</span></div>
+        <p>MEDICAL <br><span>(MONTHLY)</span></p>
+
+    </div>
+    <div class="sc4"><br><br><br><br><br>
+        <img src="educationicon.png" alt="">
+        <div class="counter"><span>180,000</span></div>
+        <p>EDUCATION <br><span>(MONTHLY)</span></b></p>
+
+    </div>
+    </center>
+</div>
+
+
+<script>
+    jQuery(document).ready(function( $ )
+    {
+    
+        $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+    });
+</script>
+
+<!--Do Container-->
+<div class="doingcontainer">
+    <div class="doingheadingcontainer">
+        <hr>
+        <h1 id="heading2">WHAT WE&nbsp;<span id="span2">ARE DOING?</span></h1>
+        <center><h2 style="color: forestgreen;">____<img src="favicon.png" alt="">____</h2></center>
+    </div>
+
+    <div class="doimagecontainer">
+        <div class="doimagecontainer1">
+            <div class="dic1">
+                <img src="di1.png" alt="">
+                <p>ONLINE SADQAH</p>
+            </div>
+            <div class="dic2">
+                <img src="di2.png" alt="">
+                <P>WELFARE</P>
+            </div>
+            <div class="dic3">
+                <img src="di3.png" alt="">
+                <P>MEDICAL</P>
+            </div>
+        </div>
+        <div class="doimagecontainer2">
+            <div class="dic4">
+                <img src="di4.png" alt="">
+                <P>DASTARKHWAN</P>
+            </div>
+            <div class="dic5">
+                <img src="di5.png" alt="">
+                <P>RO PLANT</P>
+            </div>
+            <div class="dic6">
+                <img src="di6.png" alt="">
+                <P>EDUCATION</P>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Mission Box Code-->
+<div class="missionbox">
+
+    <div class="mb1">
+        <div class="mbheading">
+        <p> MISSION AND UPCOMING PROJECTS</p>
+        <h2>_____</h2>  
+        </div>
+        <div class="rowbox">
+            <div class="row1">
+                <div class="mbrbox1">
+                  <a href="#top">  <img src="mbi1.png"></a>
+                    <p id="mbpara">HEPATITIS</p>
+                </div>
+                <div class="mbrbox2">
+                    <a href="#top">  <img src="mbi2.png"></a>
+                    <p id="mbpara">HOUSING SOCIETY</p>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="mbrbox3">
+                    <a href="#top"> <img src="mbi3.png"></a>
+                    <p id="mbpara">IT LITERACY</p>
+                </div>
+                <div class="mbrbox4">
+                    <a href="#top"><img src="mbi4.png"></a>
+                    <p id="mbpara">THARPARKAR</p>
+                </div>
+            </div>
+        </div>
+           
+    </div>
+    <div class="mb2">
+        <div class="mbheading2">
+            <p>Upcoming Events</p>
+            <h2>_____<span>__________________________</span></h2>  
+                <div class="newsbox">
+                    <marquee id="newsboxslide" behavior="scroll" direction="up" scrollamount="3"  
+                             onmouseover="this.stop();" onmouseout="this.start();">
+                             Saylani Welfare Distributing Ration & Clothes to affected people of Balochistan. <a href="">More Details</a><br><br>
+
+                             Entry Test Accouncement (Graphic Designing & Video Editing/Animation Course) On Sunday 3rd March 2019 @ 11:00Am 
+                             Vanue: 4rh Floor, Saylani Welfare International Trust HeadOffice Bahadurabad . <a href="">More Details</a> <br><br>
+                             
+                             Dr Jamil Ahmed (Additional Inspector General of Police) & Atiqmir Visit Saylani Welfare International Trust, 
+                             Saylani Mass I.T. Training .<a href="">More Details</a> <br><br>
+                             
+                             PIAIC Entrance Exam Merit Ranking List Announced.<a href="">More Details</a> <br><br>
+                             
+                             President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice Karachi. <a href="">More Details</a>     
+                    </marquee>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!--Image Gallery-->
+<div class="smallimagecontainer">
+    <div class="igheading">
+        <h1 id="heading2">IMAGE&nbsp;<span id="span2">GALLERY</span></h1>
+        <center><h2 style="color: forestgreen;">____<img src="favicon.png" alt="">____</h2></center>
+    </div>
+    <div class="imagegallery">
+        <div class="ig1">
+            <img  class="image1" src="ig1.jpg" alt="" width="240px" height="185px" >
+            <div class="middle1">
+                <div class="btn1">
+                   <button id="b1"><img src="vimg.png" alt=""></button>
+                   <a href="ig1.jpg" download><button id="b2"> <img src="download.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="ig2">
+            <img class="image2" src="ig2.jpg" alt="" width="240px" height="185px" >
+            <div class="middle2">
+                <div class="btn2">
+                    <button id="b3"><img src="vimg.png" alt=""></button>
+                    <button id="b4"> <img src="download.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="ig3">
+            <img class="image3" src="ig3.jpg" alt="" width="240px" height="185px" >
+            <div class="middle3">
+                <div class="btn3">
+                    <button id="b5"><img src="vimg.png" alt=""></button>
+                    <button id="b6"> <img src="download.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="ig4"> 
+            <img  class="image4" src="ig4.jpg" alt="" width="240px" height="185px" >
+            <div class="middle4">
+                <div class="btn4">
+                    <button id="b7"><img src="vimg.png" alt=""></button>
+                    <a href="ig4.jpg" download>  <button id="b8"> <img src="download.png" alt=""></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="ig5">
+            <img  class="image5" src="ig5.jpg" alt="" width="240px" height="185px" >
+            <div class="middle5">
+                <div class="btn5">
+                    <button id="b9"><img src="vimg.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer Box-->
+<div class="footer1">
+    <div class="f1box1">
+        <p>Head Office, </p>
+        <p>A-25, Bahadurabad Chowrangi Karachi, Pakistan </p>
+        <p><img src="phone.png" alt="" width="20px" height="20px">&nbsp; UAN: 111-729-526   
+            &nbsp;&nbsp;&nbsp; <span><img src="glob.png" alt="" width="20px" height="20px">&nbsp;(+0092-213) 4130786-90</span>
+        </p>
+        <p><img src="phone.png" alt="" width="20px" height="20px">&nbsp; CELL: 92-311-1729526</p>
+        <p><img src="phone.png" alt="" width="20px" height="20px">&nbsp; USA NO +1(716)941 7792 </p>
+        <p><img src="phone.png" alt="" width="20px" height="20px">&nbsp; UK NO (+44)115 970 6256 </p>
+        <p><img src="envelop.png" alt="" width="20px" height="20px">&nbsp; info@saylaniwelfare.com</p>
+
+    </div>
+    <div class="f1box2">
+        <p>Useful Links</p>
+        <h2>_____<span>__________________________</span></h2>  
+    </div>
+    <div class="f1box3">
+        <p>Connect With Us</p>
+        <p>
+            <button><img src="img1.png" href="https://www.facebook.com/saylaniwelfare/" alt="" width="15px" height="15px"></button>
+            <button><img src="img2.png" href="https://twitter.com/OfficialSwit" alt="" width="15px" height="15px"></button>
+            <button><img src="img3.png" href="https://www.instagram.com/saylaniwelfare/" alt="" width="15px" height="15px"></button>
+            <button><img src="img4.png" href="https://www.youtube.com/c/SaylaniWelfareTrustOfficialPage" alt="" width="15px" height="15px"></button>
+        </p>                           
+    </div>
+</div>
+<!--Footer 2-->
+<div class="footer2">
+    <p>Copyright © 2020 Saylani Welfare </p>
+</div>
+</body>
+</html>
